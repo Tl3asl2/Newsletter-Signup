@@ -17,7 +17,7 @@ app.get("/", function (req, res) {
 //Setting up MailChimp
 mailchimp.setConfig({
 //replace with your api key
- apiKey: "7fddbcd8f38fda77806ae6cedcb54a64-us10",
+ apiKey: "", // remove my API key
 //replace with last us-XX from api key
  server: "us10"
 });
@@ -31,7 +31,7 @@ const secondName = req.body.lName;
 const email = req.body.email;
 
 //Your list/audience id
-const listId = "38726ec701";
+const listId = ""; //remove my listID
 
 //Creating an object with the users data
 const subscribingUser = {
